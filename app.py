@@ -66,6 +66,7 @@ persons_schema = PersonSchema(many=True)
 @app.route("/")
 def index():
     people = make_fake_people(10)
+    # Return people
     return jsonify(people)
 
 
